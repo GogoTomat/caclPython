@@ -118,10 +118,11 @@ def button_mm():
 
 def button_point():
     global var
+    global operator
     q = var.count(".")
     if var[-1] != ".":
         var = var + "."
-    if q > 1:
+    if q > 0 and operator == "":
         messagebox.showerror('Too many points')
         var = ""
     the_data.set(var)

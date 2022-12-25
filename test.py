@@ -34,4 +34,3 @@ class TestCalc(unittest.TestCase):
     def test_point(self):
         self.assertTrue(main.var[0] != '.')
 
-  
